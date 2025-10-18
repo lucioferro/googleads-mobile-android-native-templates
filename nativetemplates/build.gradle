@@ -1,6 +1,23 @@
+buildscript {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.7.3'
+    }
+}
+
 apply plugin: 'com.android.library'
 
+repositories {
+    google()
+    mavenCentral()
+}
+
 android {
+    namespace 'com.google.android.ads.nativetemplates'
     compileSdkVersion 36
 
     defaultConfig {
